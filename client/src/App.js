@@ -38,12 +38,12 @@ function App() {
           Submit
         </button>
       </form>
-      <div className="values">
+      <div className="card-section">
         {data &&
           data.map((loc, ind) => {
             return (
-              <div key={ind} className="result">
-                {loc.location} = {loc.distance}
+              <div key={ind} className="card">
+                {loc.location} = {loc.distance} Km
               </div>
             );
           })}
